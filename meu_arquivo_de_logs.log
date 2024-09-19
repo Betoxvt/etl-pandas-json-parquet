@@ -1,0 +1,434 @@
+2024-09-18T21:26:59.691570-0300 INFO Chamando função pipeline com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:26:59.691668-0300 INFO Chamando função extrair_dados com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'),) e kwargs {} log.py
+2024-09-18T21:26:59.700211-0300 INFO Função extrair_dados retornou             Produto  ...        Data
+0    Notebook Gamer  ...  2023-01-17
+1     Mouse Sem Fio  ...  2023-01-17
+2  Teclado Mecânico  ...  2023-01-17
+3    Notebook Gamer  ...  2023-01-16
+4     Mouse Sem Fio  ...  2023-01-16
+5  Teclado Mecânico  ...  2023-01-16
+6    Notebook Gamer  ...  2023-01-15
+7     Mouse Sem Fio  ...  2023-01-15
+8  Teclado Mecânico  ...  2023-01-15
+
+[9 rows x 5 columns] log.py
+2024-09-18T21:26:59.702375-0300 INFO Chamando função transformar_dados com args (            Produto  ...        Data
+0    Notebook Gamer  ...  2023-01-17
+1     Mouse Sem Fio  ...  2023-01-17
+2  Teclado Mecânico  ...  2023-01-17
+3    Notebook Gamer  ...  2023-01-16
+4     Mouse Sem Fio  ...  2023-01-16
+5  Teclado Mecânico  ...  2023-01-16
+6    Notebook Gamer  ...  2023-01-15
+7     Mouse Sem Fio  ...  2023-01-15
+8  Teclado Mecânico  ...  2023-01-15
+
+[9 rows x 5 columns],) e kwargs {} log.py
+2024-09-18T21:26:59.704964-0300 INFO Função transformar_dados retornou             Produto  ...  Total
+0    Notebook Gamer  ...   3000
+1     Mouse Sem Fio  ...    420
+2  Teclado Mecânico  ...    200
+3    Notebook Gamer  ...  10500
+4     Mouse Sem Fio  ...    300
+5  Teclado Mecânico  ...    300
+6    Notebook Gamer  ...   4500
+7     Mouse Sem Fio  ...    300
+8  Teclado Mecânico  ...    500
+
+[9 rows x 6 columns] log.py
+2024-09-18T21:26:59.707293-0300 INFO Chamando função carregar_dados com args (            Produto  ...  Total
+0    Notebook Gamer  ...   3000
+1     Mouse Sem Fio  ...    420
+2  Teclado Mecânico  ...    200
+3    Notebook Gamer  ...  10500
+4     Mouse Sem Fio  ...    300
+5  Teclado Mecânico  ...    300
+6    Notebook Gamer  ...   4500
+7     Mouse Sem Fio  ...    300
+8  Teclado Mecânico  ...    500
+
+[9 rows x 6 columns], ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:26:59.766066-0300 INFO Função carregar_dados retornou None log.py
+2024-09-18T21:26:59.766166-0300 INFO Função pipeline retornou None log.py
+2024-09-18T21:42:30.383901-0300 INFO Chamando função pipeline com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:42:30.383998-0300 INFO Chamando função extrair_dados com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'),) e kwargs {} log.py
+2024-09-18T21:42:30.391090-0300 INFO Função extrair_dados retornou             Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns] log.py
+2024-09-18T21:42:30.391179-0300 INFO Função extrair_dados executada em 0.0072 segundos timer.py
+2024-09-18T21:42:30.393373-0300 INFO Chamando função transformar_dados com args (            Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns],) e kwargs {} log.py
+2024-09-18T21:42:30.396059-0300 INFO Função transformar_dados retornou             Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns] log.py
+2024-09-18T21:42:30.396141-0300 INFO Função transformar_dados executada em 0.0049 segundos timer.py
+2024-09-18T21:42:30.398385-0300 INFO Chamando função carregar_dados com args (            Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns], ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:42:30.417274-0300 INFO Função carregar_dados retornou None log.py
+2024-09-18T21:42:30.417374-0300 INFO Função carregar_dados executada em 0.0212 segundos timer.py
+2024-09-18T21:42:30.417429-0300 INFO Função pipeline retornou None log.py
+2024-09-18T21:42:30.417472-0300 INFO Função pipeline executada em 0.0336 segundos timer.py
+2024-09-18T21:42:43.017477-0300 INFO Chamando função pipeline com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:42:43.017597-0300 INFO Chamando função extrair_dados com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'),) e kwargs {} log.py
+2024-09-18T21:42:43.024777-0300 INFO Função extrair_dados retornou             Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns] log.py
+2024-09-18T21:42:43.024872-0300 INFO Função extrair_dados executada em 0.0073 segundos timer.py
+2024-09-18T21:42:43.027037-0300 INFO Chamando função transformar_dados com args (            Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns],) e kwargs {} log.py
+2024-09-18T21:42:43.030015-0300 INFO Função transformar_dados retornou             Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns] log.py
+2024-09-18T21:42:43.030102-0300 INFO Função transformar_dados executada em 0.0052 segundos timer.py
+2024-09-18T21:42:43.032462-0300 INFO Chamando função carregar_dados com args (            Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns], ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:42:43.051770-0300 INFO Função carregar_dados retornou None log.py
+2024-09-18T21:42:43.051872-0300 INFO Função carregar_dados executada em 0.0217 segundos timer.py
+2024-09-18T21:42:43.051931-0300 INFO Função pipeline retornou None log.py
+2024-09-18T21:42:43.051979-0300 INFO Função pipeline executada em 0.0345 segundos timer.py
+2024-09-18T21:45:07.019455-0300 INFO Chamando função pipeline com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:45:07.019553-0300 INFO Chamando função extrair_dados com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'),) e kwargs {} log.py
+2024-09-18T21:45:07.026455-0300 INFO Função extrair_dados retornou             Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns] log.py
+2024-09-18T21:45:07.026533-0300 INFO Função extrair_dados executada em 0.0070 segundos timer.py
+2024-09-18T21:45:07.028717-0300 INFO Chamando função transformar_dados com args (            Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns],) e kwargs {} log.py
+2024-09-18T21:45:07.031538-0300 INFO Função transformar_dados retornou             Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns] log.py
+2024-09-18T21:45:07.031618-0300 INFO Função transformar_dados executada em 0.0050 segundos timer.py
+2024-09-18T21:45:07.033921-0300 INFO Chamando função carregar_dados com args (            Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns], ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T21:45:07.034009-0300 ERROR Exceção capturada em carregar_dados: name 'Ffalse' is not defined log.py
+Traceback (most recent call last):
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/pipeline.py", line 11, in <module>
+    pipeline(pasta_entrada, formato_saida)
+    │        │              └ ['csv', 'parquet']
+    │        └ PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data')
+    └ <function pipeline at 0x7f18ce7be980>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/timer.py", line 10, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet'])
+             └ <function pipeline at 0x7f18ce7be8e0>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet'])
+             └ <function pipeline at 0x7f18ce7be840>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/etl.py", line 42, in pipeline
+    carregar_dados(dados_transformados, formato_saida)
+    │              │                    └ ['csv', 'parquet']
+    │              └             Produto    Categoria  ...        Data  Total
+    │                0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+    │                1     Mouse...
+    └ <function carregar_dados at 0x7f18ce7be7a0>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/timer.py", line 10, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (            Produto    Categoria  ...        Data  Total
+             │       0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+             │       1     Mous...
+             └ <function carregar_dados at 0x7f18ce7be700>
+
+> File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (            Produto    Categoria  ...        Data  Total
+             │       0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+             │       1     Mous...
+             └ <function carregar_dados at 0x7f18ce7be660>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/etl.py", line 31, in carregar_dados
+    df.to_csv('vendas.csv', index=Ffalse)
+    │  └ <function NDFrame.to_csv at 0x7f18cfbd9120>
+    └             Produto    Categoria  ...        Data  Total
+      0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+      1     Mouse...
+
+NameError: name 'Ffalse' is not defined
+2024-09-18T21:45:07.053005-0300 ERROR Exceção capturada em pipeline: name 'Ffalse' is not defined log.py
+Traceback (most recent call last):
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/pipeline.py", line 11, in <module>
+    pipeline(pasta_entrada, formato_saida)
+    │        │              └ ['csv', 'parquet']
+    │        └ PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data')
+    └ <function pipeline at 0x7f18ce7be980>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/timer.py", line 10, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet'])
+             └ <function pipeline at 0x7f18ce7be8e0>
+
+> File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet'])
+             └ <function pipeline at 0x7f18ce7be840>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/etl.py", line 42, in pipeline
+    carregar_dados(dados_transformados, formato_saida)
+    │              │                    └ ['csv', 'parquet']
+    │              └             Produto    Categoria  ...        Data  Total
+    │                0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+    │                1     Mouse...
+    └ <function carregar_dados at 0x7f18ce7be7a0>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/timer.py", line 10, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (            Produto    Categoria  ...        Data  Total
+             │       0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+             │       1     Mous...
+             └ <function carregar_dados at 0x7f18ce7be700>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/log.py", line 27, in wrapper
+    result = func(*args, **kwargs)
+             │     │       └ {}
+             │     └ (            Produto    Categoria  ...        Data  Total
+             │       0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+             │       1     Mous...
+             └ <function carregar_dados at 0x7f18ce7be660>
+
+  File "/home/rggn/Desktop/jornada/etl-pandas-json-parquet/etl.py", line 31, in carregar_dados
+    df.to_csv('vendas.csv', index=Ffalse)
+    │  └ <function NDFrame.to_csv at 0x7f18cfbd9120>
+    └             Produto    Categoria  ...        Data  Total
+      0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+      1     Mouse...
+
+NameError: name 'Ffalse' is not defined
+2024-09-18T22:08:14.332470-0300 INFO Chamando função pipeline com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T22:08:14.332594-0300 INFO Chamando função extrair_dados com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'),) e kwargs {} log.py
+2024-09-18T22:08:14.340037-0300 INFO Função extrair_dados retornou             Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns] log.py
+2024-09-18T22:08:14.340148-0300 INFO Função extrair_dados executada em 0.0076 segundos timer.py
+2024-09-18T22:08:14.342467-0300 INFO Chamando função transformar_dados com args (            Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns],) e kwargs {} log.py
+2024-09-18T22:08:14.345277-0300 INFO Função transformar_dados retornou             Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns] log.py
+2024-09-18T22:08:14.345369-0300 INFO Função transformar_dados executada em 0.0052 segundos timer.py
+2024-09-18T22:08:14.347591-0300 INFO Chamando função carregar_dados com args (            Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns], ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T22:08:14.367273-0300 INFO Função carregar_dados retornou None log.py
+2024-09-18T22:08:14.367411-0300 INFO Função carregar_dados executada em 0.0220 segundos timer.py
+2024-09-18T22:08:14.367540-0300 INFO Função pipeline retornou None log.py
+2024-09-18T22:08:14.367627-0300 INFO Função pipeline executada em 0.0352 segundos timer.py
+2024-09-18T22:08:17.146926-0300 INFO Chamando função pipeline com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'), ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T22:08:17.147070-0300 INFO Chamando função extrair_dados com args (PosixPath('/home/rggn/Desktop/jornada/etl-pandas-json-parquet/data'),) e kwargs {} log.py
+2024-09-18T22:08:17.154307-0300 INFO Função extrair_dados retornou             Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns] log.py
+2024-09-18T22:08:17.154416-0300 INFO Função extrair_dados executada em 0.0073 segundos timer.py
+2024-09-18T22:08:17.156675-0300 INFO Chamando função transformar_dados com args (            Produto    Categoria  ...  Venda        Data
+0    Notebook Gamer  Eletrônicos  ...   1500  2023-01-17
+1     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-17
+2  Teclado Mecânico  Eletrônicos  ...    100  2023-01-17
+3    Notebook Gamer  Eletrônicos  ...   1500  2023-01-16
+4     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-16
+5  Teclado Mecânico  Eletrônicos  ...    100  2023-01-16
+6    Notebook Gamer  Eletrônicos  ...   1500  2023-01-15
+7     Mouse Sem Fio  Eletrônicos  ...     30  2023-01-15
+8  Teclado Mecânico  Eletrônicos  ...    100  2023-01-15
+
+[9 rows x 5 columns],) e kwargs {} log.py
+2024-09-18T22:08:17.159405-0300 INFO Função transformar_dados retornou             Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns] log.py
+2024-09-18T22:08:17.159523-0300 INFO Função transformar_dados executada em 0.0051 segundos timer.py
+2024-09-18T22:08:17.161829-0300 INFO Chamando função carregar_dados com args (            Produto    Categoria  ...        Data  Total
+0    Notebook Gamer  Eletrônicos  ...  2023-01-17   3000
+1     Mouse Sem Fio  Eletrônicos  ...  2023-01-17    420
+2  Teclado Mecânico  Eletrônicos  ...  2023-01-17    200
+3    Notebook Gamer  Eletrônicos  ...  2023-01-16  10500
+4     Mouse Sem Fio  Eletrônicos  ...  2023-01-16    300
+5  Teclado Mecânico  Eletrônicos  ...  2023-01-16    300
+6    Notebook Gamer  Eletrônicos  ...  2023-01-15   4500
+7     Mouse Sem Fio  Eletrônicos  ...  2023-01-15    300
+8  Teclado Mecânico  Eletrônicos  ...  2023-01-15    500
+
+[9 rows x 6 columns], ['csv', 'parquet']) e kwargs {} log.py
+2024-09-18T22:08:17.181117-0300 INFO Função carregar_dados retornou None log.py
+2024-09-18T22:08:17.181225-0300 INFO Função carregar_dados executada em 0.0217 segundos timer.py
+2024-09-18T22:08:17.181284-0300 INFO Função pipeline retornou None log.py
+2024-09-18T22:08:17.181318-0300 INFO Função pipeline executada em 0.0344 segundos timer.py
