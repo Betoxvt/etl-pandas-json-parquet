@@ -3,6 +3,7 @@ import os
 import glob
 from log import log_decorator
 from timer import timer_decorator
+from schema import validate_schema
 
 # Função de extract que lê e consolida
 @timer_decorator
@@ -17,6 +18,7 @@ def extrair_dados(pasta: str) -> pd.DataFrame:
 # Função que transforma o df adicionando o total de cada venda
 @timer_decorator
 @log_decorator
+@validate_schema
 def transformar_dados(df: pd.DataFrame) -> pd.DataFrame:
     df['Total'] = df['Quantidade'] * df['Venda']
     return df

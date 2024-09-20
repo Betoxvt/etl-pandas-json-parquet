@@ -26,10 +26,10 @@ logger.add(
 def log_decorator(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-        logger.info(f'Chamando função {func.__name__} com args {args} e kwargs {kwargs}')
+        logger.info(f'Chamando função {func.__name__} com args:\n{args}\nE kwargs:\n{kwargs}')
         try:
             result = func(*args, **kwargs)
-            logger.info(f'Função {func.__name__} retornou {result}')
+            logger.info(f'Função {func.__name__} retornou:\n{result}')
             return result
         except Exception as e:
             logger.exception(f'Exceção capturada em {func.__name__}: {e}')
